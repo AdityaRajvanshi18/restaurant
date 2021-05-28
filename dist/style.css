@@ -11,6 +11,14 @@ body{
     background-color: var(--background);
 }
 
+@media only screen and (max-width: 600px){
+    body{
+        width: min-content;
+    }
+}
+
+
+
 .outer-border{
     border: 5px solid var(--black);
 }
@@ -27,15 +35,11 @@ body{
 }
 
 .title{
-    font-weight: bold;
+    font-weight:600;
     font-size: 4rem;
     color: var(--black);
     margin-left: 1rem;
     transition: 0.2s color ease-in-out;
-}
-
-.title:hover{
-    color: var(--background);
 }
 
 .nav-container{
@@ -79,7 +83,7 @@ body{
     justify-content: center;
 }
 
-img{
+.logo{
     width: 44vw;
     max-width: 700px;
 }
@@ -89,4 +93,128 @@ img{
     margin-bottom: 2rem;
     font-size: 1.5rem;
     color: var(--black);
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price{
+    text-align: end;
+}
+
+.menu-item{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    font-size: 1.5rem;
+    width: 44vw;
+    height:max-content;
+    /* height: 4.3rem; */
+    align-self: center;
+}
+
+.dessert{
+    background-color: var(--blue);
+    padding: 2rem;
+}
+
+.course{
+    font-size: 3rem;
+    color: var(--red);
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.food-img{
+    width: 44vw;
+    margin-bottom: 1rem; 
+    box-shadow: 10px 10px var(--pink); 
+}
+
+.desc{
+    font-weight: 300;
+    font-size: 1.2rem;
+    grid-column: span 2;
+}
+
+.spacer{
+    margin: 1rem;
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-us{
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--black);
+    text-align: center;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 2fr;
+    margin: 3rem;
+}
+
+.covid-title{
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.covid{
+    background-color: var(--blue);
+    grid-column: span 2;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--pink);
+    margin-top: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
+    grid-row: span 2;
+}
+
+.phone-title{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.phone-num{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.hours-text{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.spacer2{
+    margin: 4rem;
+}
+
+.conts{
+    margin: 2rem 0;
 }

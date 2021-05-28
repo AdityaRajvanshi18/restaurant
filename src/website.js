@@ -17,6 +17,7 @@ function createHeader(){
     const home = document.createElement("div");
     home.classList.add("nav");
     home.textContent = "HOME";
+    setActiveButton(home);
     home.addEventListener("click", (e) => {
         if (e.target.classList.contains("active")) return;
         setActiveButton(home);
@@ -93,7 +94,9 @@ function initializeWebsite(){
 
     //content.appendChild(createMain());
     console.log(content);
-    loadHome();
+    //loadHome();
+    //loadMenu();
+    loadContact();
 }
 
 export default initializeWebsite;

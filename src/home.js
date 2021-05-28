@@ -4,6 +4,7 @@ function createHome(){
 
     const logo = document.createElement("img");
     const imgContainer = document.createElement("div");
+    logo.classList.add("logo");
     logo.src = "imgs/sun2Crop2.png";
     logo.alt = "Cafe du Soleil logo";
     imgContainer.classList.add("img-container");
