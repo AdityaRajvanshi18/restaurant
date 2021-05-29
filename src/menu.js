@@ -6,7 +6,7 @@ function createMenu(){
     spacer.classList.add("spacer");
     //TAPAS
     menu.appendChild(createMenuCourse("TAPAS"));
-    menu.appendChild(createMenuImg("/dist/imgs/tapas.jpg"))
+    menu.appendChild(createMenuImg("imgs/tapas.jpg"))
     /* menu.appendChild(createMenuItem(
         "",
         "$10.00",
@@ -34,7 +34,7 @@ function createMenu(){
     ));
     //SALADS
     menu.appendChild(createMenuCourse("SALADS"));
-    menu.appendChild(createMenuImg("/dist/imgs/salad.jpg"))
+    menu.appendChild(createMenuImg("imgs/salad.jpg"))
     menu.appendChild(createMenuItem(
         "Kale Caeser Salad",
         "$11.00",
@@ -58,7 +58,7 @@ function createMenu(){
     //SOUP
     menu.appendChild(spacer);
     menu.appendChild(createMenuCourse("FRESH HOMEMADE SOUP"));
-    menu.appendChild(createMenuImg("/dist/imgs/soup.jpg"));
+    menu.appendChild(createMenuImg("imgs/soup.jpg"));
     menu.appendChild(createMenuItem(
         "Clams Chowder Soup",
         "$10.00",
@@ -76,7 +76,7 @@ function createMenu(){
     ));
     //ENTREES
     menu.appendChild(createMenuCourse("ENTREES"));
-    menu.appendChild(createMenuImg("/dist/imgs/entrees.jpg"));
+    menu.appendChild(createMenuImg("imgs/entrees.jpg"));
     menu.appendChild(createMenuItem(
         "Coq Au Vin",
         "$18.00",
@@ -104,7 +104,7 @@ function createMenu(){
     ));
 
     menu.appendChild(createMenuCourse("PEI MUSSELS"));
-    menu.appendChild(createMenuImg("/dist/imgs/mussels.webp"));
+    menu.appendChild(createMenuImg("imgs/mussels.webp"));
     menu.appendChild(createMenuItem(
         "Garlic Mussels",
         "$12.50",
@@ -122,7 +122,7 @@ function createMenu(){
     ));
     //DESSERTS
     menu.appendChild(createMenuCourse("DESSERTS"));
-    menu.appendChild(createMenuImg("/dist/imgs/creme.jpeg"));
+    menu.appendChild(createMenuImg("imgs/creme.jpeg"));
     menu.appendChild(createMenuItem(
         "Creme Brulee",
         "$7.00",
