@@ -17,7 +17,7 @@ function createHome(){
     const timeNoMarginBot = createTimeLine("MON-THURS: 12PM - 12AM");
     timeNoMarginBot.style.marginBottom = 0; 
     home.appendChild(timeNoMarginBot);
-    //home.appendChild(createTimeLine("MON-THURS: 12PM - 12AM"));
+    
     home.appendChild(createTimeLine("FRI-SUN: 11PM - 2AM"));
 
     return home;

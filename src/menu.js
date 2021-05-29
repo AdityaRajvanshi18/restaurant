@@ -1,6 +1,7 @@
 function createMenu(){
     const menu = document.createElement("div");
-    menu.classList.add("menu");
+    menu.classList.add("menu");    
+
     const spacer = document.createElement("div");
     spacer.classList.add("spacer");
     //TAPAS
@@ -119,7 +120,7 @@ function createMenu(){
         "$12.50",
         "Tomato, fresh basil, fennel, cream, French Pastis"
     ));
-
+    //DESSERTS
     menu.appendChild(createMenuCourse("DESSERTS"));
     menu.appendChild(createMenuImg("/dist/imgs/creme.jpeg"));
     menu.appendChild(createMenuItem(
@@ -139,12 +140,12 @@ function createMenu(){
     ));
     menu.appendChild(createMenuItem(
         "The French Bread 'Pain Perdu'",
-        "$7.00",
+        "$8.75",
         "Artisan bread, sliced and soaked in egg before being pan fried." 
     ));
     menu.appendChild(createMenuItem(
         "Crepe Suzette",
-        "$7.00",
+        "$9.00",
         "Paper thin crepes with a sauce of caramelized sugar, butter, tangerine juice, lemon zest and Grand Marnier." 
     ));
     menu.appendChild(spacer);
@@ -195,5 +196,9 @@ function loadMenu(){
     main.textContent = "";
     main.appendChild(createMenu());
 }
+
+
+
+
 
 export default loadMenu;

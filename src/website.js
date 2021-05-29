@@ -92,11 +92,9 @@ function initializeWebsite(){
     content.appendChild(outerBorder);
     
 
-    //content.appendChild(createMain());
+    content.appendChild(createMain());
     console.log(content);
-    //loadHome();
-    //loadMenu();
-    loadContact();
+    loadHome();
 }
 
 export default initializeWebsite;

@@ -38,7 +38,16 @@ function createContact(){
     phoneContainer.appendChild(phoneBoxTitle);
     phoneContainer.appendChild(phoneNum);
     phoneBox.appendChild(phoneContainer);
-        //HOURS
+    //IMG
+    const logo = document.createElement("img");
+    logo.classList.add("small-logo");
+    logo.src = "/dist/imgs/sunCrop.png"
+    const logoContainer = document.createElement("div");
+    logoContainer.classList.add("small-logo-container");
+    logoContainer.appendChild(logo);
+
+    phoneBox.appendChild(logoContainer);
+    //HOURS
     //phoneBox.appendChild(spacer);
     const hoursTitle = document.createElement("div");
     hoursTitle.classList.add("phone-title");
@@ -53,8 +62,6 @@ function createContact(){
     hoursText2.classList.add("hours-text");
     hoursText2.textContent = "FRI-SUN: 11PM - 2AM";
 
-
-
     hoursContainer.appendChild(hoursTitle);
     hoursContainer.appendChild(hoursText1);
     hoursContainer.appendChild(hoursText2);
@@ -62,9 +69,25 @@ function createContact(){
 
     contactGrid.appendChild(phoneBox);
     //ADDRESS
+    const address = document.createElement("div");
+    const addressTitle = document.createElement("div");
+    const addressText = document.createElement("div");
+    address.classList.add("address-container");
+    addressTitle.classList.add("covid-title");
+    addressTitle.style.marginTop = "1rem";
+    addressTitle.textContent = "ADDRESS";
+    addressText.classList.add("phone-num")
+    addressText.style.marginBottom = "2rem";
+    addressText.textContent = "We are located at 1005 Denman Street. There is street parking and a parkade nearby."
 
-    //
-
+    address.appendChild(addressTitle);
+    address.appendChild(addressText);
+    contactGrid.appendChild(address);
+    //MAP
+    const mapContainer = document.createElement("div");
+    mapContainer.classList.add("map-container");
+    mapContainer.innerHTML = `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.3178963020664!2d-123.14133044852406!3d49.28932087923068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548672262ca7d4db%3A0x2d9f59731e55be25!2s1005%20Denman%20St%2C%20Vancouver%2C%20BC%20V6G%202M9!5e0!3m2!1sen!2sca!4v1622263212427!5m2!1sen!2sca" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
+    contactGrid.appendChild(mapContainer);
 
     contact.appendChild(contactUs);
     contact.appendChild(contactGrid);
@@ -79,15 +102,3 @@ function loadContact(){
 }
 
 export default loadContact;
-
-/* 
-<div contact flex>
-    <div contact TITLE>
-    <div contact grid col(2): 1fr 2fr row(3): 1fr 1fr 2fr>
-        <div covid box span 2 col >
-        <div phone + hours box span 2 row>
-        <div address>
-        <div map>
-    </div>
-</div
- */

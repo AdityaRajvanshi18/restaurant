@@ -9,6 +9,7 @@
 body{
     font-family: 'Oswald', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background);
+    margin: 0rem;
 }
 
 @media only screen and (max-width: 600px){
@@ -112,9 +113,8 @@ body{
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 2fr;
     font-size: 1.5rem;
-    width: 44vw;
+    width: 60%;
     height:max-content;
-    /* height: 4.3rem; */
     align-self: center;
 }
 
@@ -147,6 +147,26 @@ body{
     margin: 1rem;
 }
 
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
 /* CONTACT */
 
 .contact{
@@ -166,7 +186,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 2fr;
-    margin: 3rem;
+    margin: 2rem;
 }
 
 .covid-title{
@@ -176,6 +196,9 @@ body{
 }
 
 .covid{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: var(--blue);
     grid-column: span 2;
     font-size: 1.2rem;
@@ -187,7 +210,7 @@ body{
 .phone{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:space-between;
     background-color: var(--pink);
     margin-top: 1rem;
     padding: 0rem 1rem 1rem 1rem;
@@ -216,5 +239,43 @@ body{
 }
 
 .conts{
-    margin: 2rem 0;
+    margin: 0rem 0;
 }
+
+.small-logo{
+    width: 100%;
+}
+
+.address-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 1rem 0 0 1rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: var(--pink);
+    padding: 1rem;
+    text-align: center;
+}
+
+.map-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: var(--pink);
+    margin: 1rem 0 0 1rem;
+    padding: 1rem;
+}
+
+
+
+
+
+    
+
