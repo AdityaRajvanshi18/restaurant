@@ -41,7 +41,7 @@ function createContact(){
     //IMG
     const logo = document.createElement("img");
     logo.classList.add("small-logo");
-    logo.src = "/dist/imgs/sunCrop.png"
+    logo.src = "imgs/sunCrop.png"
     const logoContainer = document.createElement("div");
     logoContainer.classList.add("small-logo-container");
     logoContainer.appendChild(logo);
